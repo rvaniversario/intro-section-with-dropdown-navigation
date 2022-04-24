@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <button class="navbar-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </button>
+
+        <div class="navbar-collapse">
+          <div class="navbar-brand">
+            <a href="#" class="branding">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="drop-btn"
+                >Features<span class="iconify" data-icon="bx:chevron-up"></span
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">Todo List</a>
+                <a href="#">Calendar</a>
+                <a href="#">Reminders</a>
+                <a href="#">Planning</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="drop-btn"
+                >Company<span class="iconify" data-icon="bx:chevron-up"></span
+              ></a>
+              <div class="dropdown-content">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="btn-group">
+          <li><a href="#" class="login">Login</a></li>
+          <li><a href="#" class="login">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header-text">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="#" class="btn-primary">Learn more</a>
+            <ul class="header-text-bottom-img">
+              <li class="partner">
+                <img src="./images/client-databiz.svg" alt="" />
+              </li>
+              <li class="partner">
+                <img src="./images/client-audiophile.svg" alt="" />
+              </li>
+              <li class="partner">
+                <img src="./images/client-meet.svg" alt="" />
+              </li>
+              <li class="partner">
+                <img src="./images/client-maker.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="header-img">
+            <img src="./images/image-hero-desktop.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ruy Viktor Aniversario</a>.
+    </div>
+  </body>
+</html>
