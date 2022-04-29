@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -42,24 +47,51 @@
           </div>
           <ul class="navbar-nav">
             <li class="dropdown">
-              <a href="#" class="drop-btn"
-                >Features<span class="iconify" data-icon="bx:chevron-up"></span
+              <a href="#" id="btn-features" class="drop-btn"
+                >Features<span
+                  id="btn-features-icon"
+                  class="iconify chevron-up"
+                  data-icon="bx:chevron-up"
+                ></span
               ></a>
-              <div class="dropdown-content">
-                <a href="#">Todo List</a>
-                <a href="#">Calendar</a>
-                <a href="#">Reminders</a>
-                <a href="#">Planning</a>
-              </div>
+              <ul class="dropdown-content dropdown-content-features">
+                <li class="dropdown-item">
+                  <a href="#" class="drop-link"
+                    ><img src="./images/icon-todo.svg" alt="" />Todo List</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="drop-link"
+                    ><img src="./images/icon-calendar.svg" alt="" />Calendar</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="drop-link"
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      alt=""
+                    />Reminders</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="drop-link"
+                    ><img src="./images/icon-planning.svg" alt="" />Planning</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="drop-btn"
-                >Company<span class="iconify" data-icon="bx:chevron-up"></span
+              <a href="#" id="btn-company" class="drop-btn"
+                >Company<span
+                  id="btn-company-icon"
+                  class="iconify chevron-up"
+                  data-icon="bx:chevron-up"
+                ></span
               ></a>
-              <div class="dropdown-content">
-                <a href="#">History</a>
-                <a href="#">Our Team</a>
-                <a href="#">Blog</a>
+              <div class="dropdown-content dropdown-content-company">
+                <a href="#" class="drop-link">History</a>
+                <a href="#" class="drop-link">Our Team</a>
+                <a href="#" class="drop-link">Blog</a>
               </div>
             </li>
             <li class="nav-item">
@@ -69,11 +101,11 @@
               <a href="#" class="nav-link">About</a>
             </li>
           </ul>
+          <ul class="btn-group">
+            <li><a href="#" class="btn-login">Login</a></li>
+            <li><a href="#" class="btn-register">Register</a></li>
+          </ul>
         </div>
-        <ul class="btn-group">
-          <li><a href="#" class="login">Login</a></li>
-          <li><a href="#" class="login">Register</a></li>
-        </ul>
       </div>
     </nav>
     <header class="header">
@@ -88,21 +120,40 @@
             <a href="#" class="btn-primary">Learn more</a>
             <ul class="header-text-bottom-img">
               <li class="partner">
-                <img src="./images/client-databiz.svg" alt="" />
+                <img
+                  src="./images/client-databiz.svg"
+                  class="img-fluid"
+                  alt=""
+                />
               </li>
               <li class="partner">
-                <img src="./images/client-audiophile.svg" alt="" />
+                <img
+                  src="./images/client-audiophile.svg"
+                  class="img-fluid"
+                  alt=""
+                />
               </li>
               <li class="partner">
-                <img src="./images/client-meet.svg" alt="" />
+                <img src="./images/client-meet.svg" class="img-fluid" alt="" />
               </li>
               <li class="partner">
-                <img src="./images/client-maker.svg" alt="" />
+                <img src="./images/client-maker.svg" class="img-fluid" alt="" />
               </li>
             </ul>
           </div>
-          <div class="header-img">
-            <img src="./images/image-hero-desktop.png" alt="" />
+          <div class="header-img-desktop">
+            <img
+              src="./images/image-hero-desktop.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="header-img-mobile">
+            <img
+              src="./images/image-hero-mobile.png"
+              class="img-fluid"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -112,7 +163,12 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Ruy Viktor Aniversario</a>.
+      >. Coded by
+      <a href="https://github.com/rvaniversario" target="_blank"
+        >Ruy Viktor Aniversario</a
+      >.
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
