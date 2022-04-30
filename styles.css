@@ -115,7 +115,8 @@ ul {
 }
 
 .nav-item {
-  padding: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
@@ -123,6 +124,7 @@ ul {
   font-size: 14px;
   font-weight: 500;
   color: var(--medium-gray);
+  padding: 1rem;
 }
 
 .nav-link:hover {
