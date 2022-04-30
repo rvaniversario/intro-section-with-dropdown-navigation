@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/rvaniversario/intro-section-with-dropdown-navigation)
+- Live Site URL: (https://rvaniversario.github.io/intro-section-with-dropdown-navigation/)
 
 ### Built with
 
